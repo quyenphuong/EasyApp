@@ -1,5 +1,6 @@
 package com.example.easyapp;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -8,10 +9,16 @@ import android.util.Pair;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
+import com.google.firebase.auth.AuthResult;
 
 
 public class LoginActivity extends AppCompatActivity {
@@ -21,6 +28,8 @@ public class LoginActivity extends AppCompatActivity {
     TextInputLayout username, password;
     Button goHome;
     CheckBox rememberMe;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,8 +46,10 @@ public class LoginActivity extends AppCompatActivity {
 
         goHome.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                Toast.makeText(LoginActivity.this,"Đăng nhập thành công",Toast.LENGTH_SHORT).show();
                 Intent intent= new Intent(LoginActivity.this, HomeActivity.class);
                 startActivity(intent);
+
             }
         });
         callSignUp.setOnClickListener(new View.OnClickListener() {
@@ -64,4 +75,6 @@ public class LoginActivity extends AppCompatActivity {
 //            startActivity(intent, options.toBundle());
         startActivity(intent);
     }
+
+
 }
