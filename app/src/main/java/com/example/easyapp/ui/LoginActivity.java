@@ -1,4 +1,4 @@
-package com.example.easyapp;
+package com.example.easyapp.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,6 +11,7 @@ import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.easyapp.R;
 import com.google.android.material.textfield.TextInputLayout;
 
 
@@ -21,6 +22,7 @@ public class LoginActivity extends AppCompatActivity {
     TextInputLayout username, password;
     Button goHome;
     CheckBox rememberMe;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,7 +39,7 @@ public class LoginActivity extends AppCompatActivity {
 
         goHome.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent intent= new Intent(LoginActivity.this, HomeActivity.class);
+                Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
                 startActivity(intent);
             }
         });
@@ -50,16 +52,16 @@ public class LoginActivity extends AppCompatActivity {
         });
     }
 
-    public void show(){
-        Intent intent= new Intent(LoginActivity.this, SignUpActivity.class);
-        Pair[] pairs=new Pair[7];
-        pairs[0]=new Pair<View, String>(image, "logo_image");
-        pairs[1]=new Pair<View, String>(signinText, "signintext");
+    public void show() {
+        Intent intent = new Intent(LoginActivity.this, SignUpActivity.class);
+        Pair[] pairs = new Pair[7];
+        pairs[0] = new Pair<View, String>(image, "logo_image");
+        pairs[1] = new Pair<View, String>(signinText, "signintext");
 
-        pairs[2]=new Pair<View, String>(username, "username_tran");
-        pairs[3]=new Pair<View, String>(password, "password_tran");
+        pairs[2] = new Pair<View, String>(username, "username_tran");
+        pairs[3] = new Pair<View, String>(password, "password_tran");
 
-        pairs[6]=new Pair<View, String>(callSignUp, "login_signup_tran");
+        pairs[6] = new Pair<View, String>(callSignUp, "login_signup_tran");
 //            ActivityOptions options=makeSceneTransitionAnimation(Login_Activity.this, pairs);
 //            startActivity(intent, options.toBundle());
         startActivity(intent);

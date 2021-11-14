@@ -1,8 +1,10 @@
-package com.example.easyapp;
+package com.example.easyapp.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.easyapp.R;
 
 public class SignUpActivity extends AppCompatActivity {
 
