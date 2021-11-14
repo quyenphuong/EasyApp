@@ -12,17 +12,16 @@
 
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="200dp"
         android:id="@+id/logoimgUp"
-        android:src="@drawable/easypng"
-        />
+        android:layout_width="wrap_content"
+        android:layout_height="164dp"
+        android:src="@drawable/easypng" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_marginBottom="20dp">
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/name"
@@ -116,6 +115,28 @@
                 tools:ignore="SpeakableTextPresentCheck" />
 
         </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/confirm_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirm Password"
+            android:textColorHint="@color/white"
+            android:elevation="5dp"
+            app:passwordToggleEnabled="false"
+
+            app:startIconDrawable="@drawable/ic_baseline_lock_24"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:textColor="@color/white"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
     </LinearLayout>
 
     <Button
@@ -133,10 +154,10 @@
     <Button
         android:id="@+id/btnLogin"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Already have an account? LogIn"
+        android:layout_height="50dp"
         android:background="@drawable/btn"
-        android:transitionName="login_signup_tran"/>
+        android:text="Already have an account? LogIn"
+        android:transitionName="login_signup_tran" />
 
 
 </LinearLayout>
