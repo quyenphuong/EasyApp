@@ -1,4 +1,4 @@
-package com.example.easyapp;
+package com.example.easyapp.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,6 +11,9 @@ import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.easyapp.R;
+import com.example.easyapp.ui.HomeActivity;
+import com.example.easyapp.ui.SignUpActivity;
 import com.google.android.material.textfield.TextInputLayout;
 
 
