@@ -35,21 +35,21 @@
 
 
         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/email"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/username"
-            android:hint="Username"
-            android:textColorHint="@color/white"
-            android:elevation="5dp"
-            android:paddingLeft="15sp"
-            android:layout_marginTop="30sp"
             android:layout_marginLeft="5sp"
+            android:layout_marginTop="30sp"
             android:layout_marginRight="5sp"
+            android:elevation="5dp"
+            android:hint="Email"
+            android:paddingLeft="15sp"
             android:paddingRight="15sp"
+            android:textColorHint="@color/white"
             android:transitionName="username_tran"
-            app:startIconDrawable="@drawable/ic_baseline_person_24"
             app:endIconMode="custom"
             app:startIconContentDescription=""
+            app:startIconDrawable="@drawable/ic_baseline_person_24"
 
             >
 
