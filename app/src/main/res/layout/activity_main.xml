@@ -6,14 +6,13 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:background="@drawable/splashbg"
-    tools:context=".MainActivity">
+    tools:context=".ui.MainActivity">
 
     <ImageView
         android:layout_width="350dp"
         android:layout_height="350dp"
         android:id="@+id/splashImg"
         android:src="@drawable/easypng"
-        android:layout_marginTop="-20dp"
-        />
+        android:layout_marginTop="-20dp" />
 
 </LinearLayout>

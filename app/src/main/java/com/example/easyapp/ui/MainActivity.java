@@ -1,4 +1,4 @@
-package com.example.easyapp;
+package com.example.easyapp.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,11 +9,15 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
+import com.example.easyapp.ui.LoginActivity;
+import com.example.easyapp.R;
+
 public class MainActivity extends AppCompatActivity {
 
     Animation zoom;
     ImageView img;
-    private static  int SPLASH_SCREEN = 5000;
+    private static int SPLASH_SCREEN = 4000;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,6 +32,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
                 finish();
             }
-        },SPLASH_SCREEN);
+        }, SPLASH_SCREEN);
     }
 }
