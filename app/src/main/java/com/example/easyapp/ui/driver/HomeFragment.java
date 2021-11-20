@@ -49,7 +49,7 @@ public class HomeFragment extends Fragment {
         homeHorModelList.add(new HomeHorModel(R.drawable.voucher, "Ưu đãi"));
         homeHorModelList.add(new HomeHorModel(R.drawable.car, "Di chuyển"));
         homeHorModelList.add(new HomeHorModel(R.drawable.gift, "Quà tặng"));
-        homeHorModelList.add(new HomeHorModel(R.drawable.voucher, "Ưu đãi"));
+
         homeHorAdapter = new HomeHorAdapter(getActivity().getApplicationContext(), homeHorModelList);
         homeHorAdapter.notifyDataSetChanged();
         homeHorizontalRec.setAdapter(homeHorAdapter);
