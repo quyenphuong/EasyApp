@@ -1,24 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:id="@+id/body_container"
+    android:background="@color/white"
     tools:context=".ui.HomeActivity">
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:src="@drawable/easypng"
-        android:background="#EC6615"/>
+        android:layout_height="120dp"
+        android:background="#EC6615"
+        android:src="@drawable/easyright" />
 
 
-    <FrameLayout
-        android:id="@+id/container"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1" />
+<!--    <GridLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:padding="5dp"-->
+<!--        android:layout_margin="10dp">-->
+
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="50dp"-->
+
+<!--            />-->
+
+
+<!--    </GridLayout>-->
+
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
@@ -31,5 +44,5 @@
         app:itemIconTint="@drawable/item_selector"
         app:itemRippleColor="@android:color/transparent"
         app:labelVisibilityMode="unlabeled"
-        app:menu="@menu/item_menu"/>
-</LinearLayout>
+        app:menu="@menu/item_menu" />
+</RelativeLayout>
