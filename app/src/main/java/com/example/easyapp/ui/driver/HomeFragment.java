@@ -3,64 +3,77 @@ package com.example.easyapp.ui.driver;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.DefaultItemAnimator;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.easyapp.R;
+import com.example.easyapp.adapters.HomeHorAdapter;
+import com.example.easyapp.adapters.HomeVerAdapter;
+import com.example.easyapp.model.HomeHorModel;
+import com.example.easyapp.model.HomeVerModel;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link HomeFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+import java.util.ArrayList;
+import java.util.List;
+
+
 public class HomeFragment extends Fragment {
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
+    RecyclerView homeHorizontalRec, homeVerticalRec;
+    List<HomeHorModel> homeHorModelList;
+    HomeHorAdapter homeHorAdapter;
 
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
 
-    public HomeFragment() {
-        // Required empty public constructor
-    }
+    //vertical
+    List<HomeVerModel>homeVerModelList;
+    HomeVerAdapter homeVerAdapter;
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment HomeFragment.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static HomeFragment newInstance(String param1, String param2) {
-        HomeFragment fragment = new HomeFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
 
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
-    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        View root = inflater.inflate(R.layout.fragment_home, container, false);
+        homeHorizontalRec = root.findViewById(R.id.home_hor_rec);
+        homeVerticalRec = root.findViewById(R.id.home_ver_rec);
+
+        //Horizontal RecyclerView
+
+        homeHorizontalRec.setLayoutManager(new LinearLayoutManager(getActivity()));
+        homeHorModelList = new ArrayList<>();
+        homeHorModelList.add(new HomeHorModel(R.drawable.ship, "Giao Hàng"));
+        homeHorModelList.add(new HomeHorModel(R.drawable.voucher, "Ưu đãi"));
+        homeHorModelList.add(new HomeHorModel(R.drawable.car, "Di chuyển"));
+        homeHorModelList.add(new HomeHorModel(R.drawable.gift, "Quà tặng"));
+        homeHorModelList.add(new HomeHorModel(R.drawable.voucher, "Ưu đãi"));
+        homeHorAdapter = new HomeHorAdapter(getActivity().getApplicationContext(), homeHorModelList);
+        homeHorAdapter.notifyDataSetChanged();
+        homeHorizontalRec.setAdapter(homeHorAdapter);
+
+        homeHorizontalRec.setHasFixedSize(true);
+        homeHorizontalRec.setNestedScrollingEnabled(false);
+
+        //Vertical RecyclerView
+        homeVerModelList = new ArrayList<>();
+        homeVerModelList.add(new HomeVerModel(R.drawable.bannersale));
+        homeVerModelList.add(new HomeVerModel(R.drawable.bannersale));
+        homeVerModelList.add(new HomeVerModel(R.drawable.bannersale));
+        homeVerModelList.add(new HomeVerModel(R.drawable.bannersale));
+
+        homeVerAdapter = new HomeVerAdapter(getActivity(),homeVerModelList);
+        homeVerAdapter.notifyDataSetChanged();
+        homeVerticalRec.setAdapter(homeVerAdapter);
+
+        homeVerticalRec.setHasFixedSize(true);
+        homeVerticalRec.setNestedScrollingEnabled(false);
+        homeVerticalRec.setLayoutManager(new LinearLayoutManager(getActivity(), RecyclerView.VERTICAL, false));
+
+        homeHorizontalRec.setLayoutManager(new LinearLayoutManager(getActivity(), RecyclerView.HORIZONTAL, false));
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false);
+        return root;
     }
 }

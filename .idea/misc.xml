@@ -21,19 +21,24 @@
         <entry key="..\:/EasyApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1259259259259259" />
         <entry key="..\:/EasyApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1259259259259259" />
         <entry key="..\:/EasyAppFinal/EasyApp/app/src/main/res/drawable/btn.xml" value="0.2755208333333333" />
+        <entry key="..\:/EasyAppFinal/EasyApp/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.1" />
+        <entry key="..\:/EasyAppFinal/EasyApp/app/src/main/res/drawable/item_selector.xml" value="0.1" />
+        <entry key="..\:/EasyAppFinal/EasyApp/app/src/main/res/drawable/round_bg.xml" value="0.1" />
+        <entry key="..\:/EasyAppFinal/EasyApp/app/src/main/res/drawable/round_corner.xml" value="0.1" />
+        <entry key="..\:/EasyAppFinal/EasyApp/app/src/main/res/drawable/search_bg.xml" value="0.1" />
         <entry key="..\:/EasyAppFinal/EasyApp/app/src/main/res/drawable/splashbg.xml" value="0.2755208333333333" />
-        <entry key="..\:/EasyAppFinal/EasyApp/app/src/main/res/layout/activity_home.xml" value="0.2554347826086957" />
-        <entry key="..\:/EasyAppFinal/EasyApp/app/src/main/res/layout/activity_login.xml" value="0.1933876811594203" />
-        <entry key="..\:/EasyAppFinal/EasyApp/app/src/main/res/layout/activity_sign_up.xml" value="0.259375" />
-        <entry key="..\:/Users/vgtma/AndroidStudioProjects/EasyApp/app/src/main/res/layout/activity_detail_history.xml" value="0.20520833333333333" />
-        <entry key="..\:/Users/vgtma/AndroidStudioProjects/EasyApp/app/src/main/res/layout/activity_history.xml" value="0.22" />
-        <entry key="..\:/Users/vgtma/AndroidStudioProjects/EasyApp/app/src/main/res/layout/activity_home.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/vgtma/AndroidStudioProjects/EasyApp/app/src/main/res/layout/activity_login.xml" value="0.33" />
-        <entry key="..\:/Users/vgtma/AndroidStudioProjects/EasyApp/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/vgtma/AndroidStudioProjects/EasyApp/app/src/main/res/layout/activity_setting.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/vgtma/AndroidStudioProjects/EasyApp/app/src/main/res/layout/activity_sign_up.xml" value="0.20520833333333333" />
-        <entry key="..\:/Users/vgtma/AndroidStudioProjects/EasyApp/app/src/main/res/menu/activity_main_drawer.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/vgtma/AndroidStudioProjects/EasyApp/app/src/main/res/menu/menu_navi.xml" value="0.36666666666666664" />
+        <entry key="..\:/EasyAppFinal/EasyApp/app/src/main/res/layout/activity_home.xml" value="0.22664359861591696" />
+        <entry key="..\:/EasyAppFinal/EasyApp/app/src/main/res/layout/activity_login.xml" value="0.264" />
+        <entry key="..\:/EasyAppFinal/EasyApp/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/EasyAppFinal/EasyApp/app/src/main/res/layout/activity_sign_up.xml" value="0.2" />
+        <entry key="..\:/EasyAppFinal/EasyApp/app/src/main/res/layout/fragment_account.xml" value="0.1" />
+        <entry key="..\:/EasyAppFinal/EasyApp/app/src/main/res/layout/fragment_activity.xml" value="0.1" />
+        <entry key="..\:/EasyAppFinal/EasyApp/app/src/main/res/layout/fragment_chat.xml" value="0.2453125" />
+        <entry key="..\:/EasyAppFinal/EasyApp/app/src/main/res/layout/fragment_home.xml" value="0.12538226299694188" />
+        <entry key="..\:/EasyAppFinal/EasyApp/app/src/main/res/layout/fragment_pay.xml" value="0.1" />
+        <entry key="..\:/EasyAppFinal/EasyApp/app/src/main/res/layout/home_horizontal_item.xml" value="0.4" />
+        <entry key="..\:/EasyAppFinal/EasyApp/app/src/main/res/layout/home_vertical_item.xml" value="0.2" />
+        <entry key="..\:/EasyAppFinal/EasyApp/app/src/main/res/menu/item_menu.xml" value="0.264" />
       </map>
     </option>
   </component>

@@ -12,7 +12,7 @@
         android:layout_width="350dp"
         android:layout_height="350dp"
         android:id="@+id/splashImg"
-        android:src="@drawable/easypng"
+        android:src="@drawable/easynew"
         android:layout_marginTop="-20dp" />
 
 </LinearLayout>

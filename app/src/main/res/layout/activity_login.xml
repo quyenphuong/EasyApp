@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="250dp"
         android:id="@+id/logoimg"
-        android:src="@drawable/easypng" />
+        android:src="@drawable/easynew" />
 
     <TextView
         android:id="@+id/signintext"
