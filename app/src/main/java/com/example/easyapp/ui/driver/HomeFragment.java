@@ -45,7 +45,7 @@ public class HomeFragment extends Fragment {
 
         homeHorizontalRec.setLayoutManager(new LinearLayoutManager(getActivity()));
         homeHorModelList = new ArrayList<>();
-        homeHorModelList.add(new HomeHorModel(R.drawable.ship, "Giao Hàng"));
+        homeHorModelList.add(new HomeHorModel(R.drawable.ship, "Gửi Hàng"));
         homeHorModelList.add(new HomeHorModel(R.drawable.voucher, "Ưu đãi"));
         homeHorModelList.add(new HomeHorModel(R.drawable.car, "Di chuyển"));
         homeHorModelList.add(new HomeHorModel(R.drawable.gift, "Quà tặng"));
