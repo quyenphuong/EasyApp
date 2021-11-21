@@ -74,6 +74,7 @@ public class HomeFragment extends Fragment {
 
         homeHorizontalRec.setLayoutManager(new LinearLayoutManager(getActivity(), RecyclerView.HORIZONTAL, false));
         // Inflate the layout for this fragment
+
         return root;
     }
 }

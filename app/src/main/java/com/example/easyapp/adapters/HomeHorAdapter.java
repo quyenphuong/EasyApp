@@ -41,7 +41,10 @@ public class HomeHorAdapter extends RecyclerView.Adapter<HomeHorAdapter.ViewHold
         holder.imageView.setImageResource(list.get(position).getImage());
         holder.name.setText(list.get(position).getName());
 
+
+
     }
+
 
     @Override
     public int getItemCount() {
@@ -50,11 +53,13 @@ public class HomeHorAdapter extends RecyclerView.Adapter<HomeHorAdapter.ViewHold
 
     class ViewHolder extends RecyclerView.ViewHolder {
 
+
         private ImageView imageView;
         private TextView name;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
+
             imageView = (ImageView)itemView.findViewById(R.id.hor_img);
             name = (TextView)itemView.findViewById(R.id.hor_text);
 
