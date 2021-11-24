@@ -1,6 +1,8 @@
 package com.example.easyapp.model;
 
-public class HomeHorModel {
+
+
+public class HomeHorModel  {
 
     int image;
     String name;

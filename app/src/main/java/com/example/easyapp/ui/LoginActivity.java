@@ -45,6 +45,17 @@ public class LoginActivity extends AppCompatActivity {
         edtemail = findViewById(R.id.email);
         edtpassword = findViewById(R.id.password);
         mAuth = FirebaseAuth.getInstance();
+
+        forgetSign.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent intent= new Intent(LoginActivity.this, ForgotActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
         goHome.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 if(edtemail.getEditText().getText().toString().length()>0 && edtpassword.getEditText().getText().toString().length()>0){

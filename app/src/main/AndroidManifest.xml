@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
         <activity
+            android:name=".ui.ForgotActivity"
+            android:exported="true" />
+        <activity
+            android:name=".feature.ShippingActivity"
+            android:exported="true" />
+        <activity
             android:name=".ui.SignUpActivity"
             android:exported="true" />
         <activity

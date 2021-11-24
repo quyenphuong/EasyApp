@@ -1,5 +1,6 @@
 package com.example.easyapp.ui.driver;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -14,9 +15,13 @@ import android.view.ViewGroup;
 import com.example.easyapp.R;
 import com.example.easyapp.adapters.HomeHorAdapter;
 import com.example.easyapp.adapters.HomeVerAdapter;
+import com.example.easyapp.feature.Iclickitemrecycler;
+import com.example.easyapp.feature.ShippingActivity;
 import com.example.easyapp.model.HomeHorModel;
 import com.example.easyapp.model.HomeVerModel;
+import com.example.easyapp.ui.HomeActivity;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -27,11 +32,9 @@ public class HomeFragment extends Fragment {
     List<HomeHorModel> homeHorModelList;
     HomeHorAdapter homeHorAdapter;
 
-
     //vertical
     List<HomeVerModel>homeVerModelList;
     HomeVerAdapter homeVerAdapter;
-
 
 
     @Override
@@ -50,7 +53,12 @@ public class HomeFragment extends Fragment {
         homeHorModelList.add(new HomeHorModel(R.drawable.car, "Di chuyển"));
         homeHorModelList.add(new HomeHorModel(R.drawable.gift, "Quà tặng"));
 
-        homeHorAdapter = new HomeHorAdapter(getActivity().getApplicationContext(), homeHorModelList);
+        homeHorAdapter = new HomeHorAdapter(getActivity().getApplicationContext(), homeHorModelList, new Iclickitemrecycler() {
+            @Override
+            public void onclickItemfeatures(HomeHorModel homeHorModel) {
+                onClickGotoShipping(homeHorModel);
+            }
+        });
         homeHorAdapter.notifyDataSetChanged();
         homeHorizontalRec.setAdapter(homeHorAdapter);
 
@@ -76,5 +84,11 @@ public class HomeFragment extends Fragment {
         // Inflate the layout for this fragment
 
         return root;
+    }
+    private void onClickGotoShipping(HomeHorModel homeHorModel){
+        Intent intent = new Intent(getActivity(), ShippingActivity.class);
+        Bundle bundle = new Bundle();
+        intent.putExtras(bundle);
+        startActivity(intent);
     }
 }
