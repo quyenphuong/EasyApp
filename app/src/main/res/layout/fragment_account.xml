@@ -22,7 +22,7 @@
     </de.hdodenhof.circleimageview.CircleImageView>
 
     <EditText
-        android:id="@+id/profile_name"
+        android:id="@+id/profile_Name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 
@@ -30,7 +30,7 @@
         android:background="@drawable/btn"
         android:drawableLeft="@drawable/ic_baseline_person_24"
         android:elevation="5dp"
-        android:hint="Your Name"
+        android:hint="Tên người dùng"
         android:padding="13dp"
         android:textColorHint="@color/white"
         app:layout_constraintTop_toBottomOf="@+id/avatar"
@@ -45,15 +45,15 @@
         android:background="@drawable/btn"
         android:drawableLeft="@drawable/ic_baseline_email_24"
         android:elevation="5dp"
-        android:hint="Your Email"
+        android:hint="Email "
         android:inputType="textEmailAddress"
         android:padding="13dp"
         android:textColorHint="@color/white"
-        app:layout_constraintTop_toBottomOf="@+id/profile_name"
+        app:layout_constraintTop_toBottomOf="@+id/profile_Name"
         tools:layout_editor_absoluteX="20dp" />
 
     <EditText
-        android:id="@+id/profile_phone"
+        android:id="@+id/profile_Phone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="30dp"
@@ -61,7 +61,7 @@
         android:background="@drawable/btn"
         android:drawableLeft="@drawable/ic_baseline_phone_android_24"
         android:elevation="5dp"
-        android:hint="Your Phone"
+        android:hint="Số điện thoại"
         android:padding="13dp"
         android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
@@ -69,7 +69,7 @@
         app:layout_constraintTop_toBottomOf="@+id/profile_Email" />
 
     <EditText
-        android:id="@+id/profile_address"
+        android:id="@+id/profile_Address"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="30dp"
@@ -77,27 +77,45 @@
         android:background="@drawable/btn"
         android:drawableLeft="@drawable/ic_baseline_place_24"
         android:elevation="5dp"
-        android:hint="Your Address"
+        android:hint="Địa chỉ"
         android:padding="13dp"
         android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/profile_phone" />
+        app:layout_constraintTop_toBottomOf="@+id/profile_Phone" />
 
     <Button
         android:id="@+id/Update"
         android:layout_width="142dp"
         android:layout_height="wrap_content"
         android:layout_margin="30dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="52dp"
         android:background="@drawable/btn"
         android:padding="13dp"
-        android:text="Update"
+        android:text="Cập nhật"
         android:textAllCaps="false"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/profile_address" />
+        app:layout_constraintTop_toBottomOf="@+id/profile_Address" />
+
+    <Button
+        android:id="@+id/Signout"
+        android:layout_width="142dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/btn"
+        android:padding="13dp"
+        android:text="Đăng xuất"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Update" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

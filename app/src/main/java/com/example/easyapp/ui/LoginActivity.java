@@ -28,11 +28,11 @@ import com.google.firebase.auth.FirebaseUser;
 public class LoginActivity extends AppCompatActivity {
 
     private FirebaseAuth mAuth;
-    ImageView image;
-    TextView callSignUp, forgetSign;
-    TextInputLayout edtemail, edtpassword;
-    Button goHome;
-    CheckBox rememberMe;
+    private ImageView image;
+    private TextView callSignUp, forgetSign;
+    private TextInputLayout edtemail, edtpassword;
+    private Button goHome;
+    private CheckBox rememberMe;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

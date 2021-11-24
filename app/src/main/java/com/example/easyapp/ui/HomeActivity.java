@@ -1,5 +1,6 @@
 package com.example.easyapp.ui;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.WindowManager;
@@ -50,6 +51,7 @@ public class HomeActivity extends AppCompatActivity {
                         break;
                     case R.id.nav_account:
                         fragment= new com.example.easyapp.ui.driver.AccountFragment();
+
                         break;
                 }
                 getSupportFragmentManager().beginTransaction().replace(R.id.container, fragment).commit();

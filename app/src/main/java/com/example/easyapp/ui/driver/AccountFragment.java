@@ -1,5 +1,6 @@
 package com.example.easyapp.ui.driver;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -11,15 +12,18 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.example.easyapp.R;
+import com.example.easyapp.ui.ForgotActivity;
+import com.example.easyapp.ui.LoginActivity;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
 
 public class AccountFragment extends Fragment {
 
-//    CircleImageView circleimageview;
-//    EditText editText;
-//    Button buttonUpdate;
+    private EditText profile_name, profile_email, profile_phone, profile_address;
+    private Button update, signout;
+
+
 
     public AccountFragment() {
         // Required empty public constructor
@@ -32,6 +36,7 @@ public class AccountFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
 
     }
 

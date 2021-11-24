@@ -3,6 +3,7 @@ package com.example.easyapp.ui;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Patterns;
 import android.view.View;
@@ -59,10 +60,11 @@ public class ForgotActivity extends AppCompatActivity {
             @Override
             public void onComplete(@NonNull Task<Void> task) {
                 if(task.isSuccessful()){
-                    Toast.makeText(ForgotActivity.this,"Check your email to reset your password",Toast.LENGTH_LONG).show();
-
+                    Toast.makeText(ForgotActivity.this,"Kiểm tra email của bạn để thiết lập lại mật khẩu của bạn",Toast.LENGTH_LONG).show();
+                    Intent intent= new Intent(ForgotActivity.this, LoginActivity.class);
+                    startActivity(intent);
                 }else {
-                    Toast.makeText(ForgotActivity.this,"Try again! Some thing wrong happened!",Toast.LENGTH_LONG).show();
+                    Toast.makeText(ForgotActivity.this,"Thử lại! Có điều gì đó không ổn đã xảy ra!",Toast.LENGTH_LONG).show();
 
                 }
             }
