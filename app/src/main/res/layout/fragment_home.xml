@@ -4,13 +4,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".ui.driver.HomeFragment">
+    tools:context=".ui.customer.HomeFragment">
+
 
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
+
 
         <EditText
             android:id="@+id/search_text"
@@ -23,7 +26,7 @@
             android:background="@drawable/search_bg"
             android:textColorHint="#EC6615"
             android:fontFamily="sans-serif-light"
-            android:layout_margin="6dp"
+            android:layout_margin="20dp"
             android:textSize="13sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"

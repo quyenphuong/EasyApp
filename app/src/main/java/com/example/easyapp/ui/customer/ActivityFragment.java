@@ -1,4 +1,4 @@
-package com.example.easyapp.ui.driver;
+package com.example.easyapp.ui.customer;
 
 import android.os.Bundle;
 
@@ -12,10 +12,10 @@ import com.example.easyapp.R;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link PayFragment#newInstance} factory method to
+ * Use the {@link ActivityFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class PayFragment extends Fragment {
+public class ActivityFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -26,7 +26,7 @@ public class PayFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public PayFragment() {
+    public ActivityFragment() {
         // Required empty public constructor
     }
 
@@ -36,11 +36,11 @@ public class PayFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment PayFragment.
+     * @return A new instance of fragment ActivityFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static PayFragment newInstance(String param1, String param2) {
-        PayFragment fragment = new PayFragment();
+    public static ActivityFragment newInstance(String param1, String param2) {
+        ActivityFragment fragment = new ActivityFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -61,6 +61,6 @@ public class PayFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_pay, container, false);
+        return inflater.inflate(R.layout.fragment_activity, container, false);
     }
 }

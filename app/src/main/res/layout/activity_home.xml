@@ -9,11 +9,12 @@
     android:background="@color/white"
     tools:context=".ui.HomeActivity">
 
-    <ImageView
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_pager"
         android:layout_width="match_parent"
-        android:layout_height="120dp"
-        android:background="#EC6615"
-        android:src="@drawable/easyright" />
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_navigation" />
+
 
 
 <!--    <GridLayout-->

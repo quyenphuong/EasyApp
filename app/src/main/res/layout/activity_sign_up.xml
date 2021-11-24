@@ -13,10 +13,31 @@
 
     <ImageView
         android:layout_width="wrap_content"
-        android:layout_height="200dp"
+        android:layout_height="150dp"
         android:id="@+id/logoimgUp"
         android:src="@drawable/easypng" />
 
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoimgUp">
+
+        <RadioButton
+            android:id="@+id/radioButton_driver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tài xế" />
+
+        <RadioButton
+            android:id="@+id/radioButton_customer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Khách hàng" />
+    </RadioGroup>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

@@ -1,10 +1,9 @@
-package com.example.easyapp.ui.driver;
+package com.example.easyapp.ui.customer;
 
 import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -19,9 +18,7 @@ import com.example.easyapp.feature.Iclickitemrecycler;
 import com.example.easyapp.feature.ShippingActivity;
 import com.example.easyapp.model.HomeHorModel;
 import com.example.easyapp.model.HomeVerModel;
-import com.example.easyapp.ui.HomeActivity;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
