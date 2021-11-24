@@ -28,9 +28,9 @@
             android:id="@+id/name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Full Name"
-            android:textColorHint="@color/white"
             android:elevation="5dp"
+            android:hint="Họ và tên"
+            android:textColorHint="@color/white"
             app:startIconDrawable="@drawable/ic_baseline_person_24">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -44,11 +44,11 @@
             android:id="@+id/username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Username"
+            android:elevation="5dp"
+            android:hint="Tên đăng nhập"
             android:textColorHint="@color/white"
             app:counterEnabled="true"
             app:counterMaxLength="15"
-            android:elevation="5dp"
             app:startIconDrawable="@drawable/ic_baseline_person_24">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -79,9 +79,9 @@
             android:id="@+id/phoneNo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Phone No"
-            android:textColorHint="@color/white"
             android:elevation="5dp"
+            android:hint="Số điện thoại"
+            android:textColorHint="@color/white"
             app:startIconDrawable="@drawable/ic_baseline_phone_android_24"
 
             >
@@ -97,9 +97,9 @@
             android:id="@+id/password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Password"
-            android:textColorHint="@color/white"
             android:elevation="5dp"
+            android:hint="Mật khẩu"
+            android:textColorHint="@color/white"
             app:passwordToggleEnabled="false"
 
             app:startIconDrawable="@drawable/ic_baseline_lock_24">
@@ -117,9 +117,9 @@
             android:id="@+id/confirm_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Password"
-            android:textColorHint="@color/white"
             android:elevation="5dp"
+            android:hint="Nhập lại mật khẩu"
+            android:textColorHint="@color/white"
             app:passwordToggleEnabled="false"
 
             app:startIconDrawable="@drawable/ic_baseline_lock_24">
@@ -140,7 +140,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dp"
         android:background="@drawable/btn"
-        android:text="GO"
+        android:text="Đăng ký"
         android:textColor="@color/white"
         android:transitionName="button_tran" />
     <!--    android:onClick="registerUser"-->
@@ -150,9 +150,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dp"
-        android:textColor="@color/white"
-        android:text="Already have an account? LogIn"
         android:background="@drawable/btn"
+        android:text="Đã có tài khoản"
+        android:textColor="@color/white"
         android:transitionName="login_signup_tran" />
 
 
