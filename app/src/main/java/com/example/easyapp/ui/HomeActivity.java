@@ -1,6 +1,5 @@
 package com.example.easyapp.ui;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.WindowManager;
@@ -8,15 +7,17 @@ import android.view.WindowManager;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
-
+import androidx.viewpager2.widget.ViewPager2;
 import com.example.easyapp.R;
-import com.example.easyapp.ui.driver.HomeFragment;
+import com.example.easyapp.adapters.ViewPagerAdapter;
+import com.example.easyapp.ui.customer.HomeFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.navigation.NavigationBarView;
 
 public class HomeActivity extends AppCompatActivity {
 
-    BottomNavigationView navigationView;
-
+    private BottomNavigationView navigationView;
+    private ViewPager2 viewpager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,35 +28,56 @@ public class HomeActivity extends AppCompatActivity {
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         navigationView = findViewById(R.id.bottom_navigation);
-        getSupportFragmentManager().beginTransaction().replace(R.id.body_container, new HomeFragment()).commit();
+//        getSupportFragmentManager().beginTransaction().replace(R.id.body_container, new HomeFragment()).commit();
         navigationView.setSelectedItemId(R.id.nav_home);
 
-        navigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener()
+        viewpager = findViewById(R.id.view_pager);
+        ViewPagerAdapter viewPagerAdapter = new ViewPagerAdapter(this);
+        viewpager.setAdapter(viewPagerAdapter);
+
+        navigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener()
         {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item){
-                Fragment fragment=null;
-                switch (item.getItemId()){
+                int id = item.getItemId();
+                if(id == R.id.nav_home){
+                    viewpager.setCurrentItem(0);
 
-                    case R.id.nav_home:
-                        fragment= new com.example.easyapp.ui.driver.HomeFragment();
-                        break;
-                    case R.id.nav_activity:
-                        fragment= new com.example.easyapp.ui.driver.ActivityFragment();
-                        break;
-                    case R.id.nav_pay:
-                        fragment= new com.example.easyapp.ui.driver.PayFragment();
-                        break;
-                    case R.id.nav_chat:
-                        fragment= new com.example.easyapp.ui.driver.ChatFragment();
-                        break;
-                    case R.id.nav_account:
-                        fragment= new com.example.easyapp.ui.driver.AccountFragment();
-
-                        break;
+                }else if(id == R.id.nav_activity){
+                    viewpager.setCurrentItem(1);
+                }else if(id == R.id.nav_pay){
+                    viewpager.setCurrentItem(2);
+                }else if(id == R.id.nav_chat){
+                    viewpager.setCurrentItem(3);
+                }else if(id == R.id.nav_account){
+                    viewpager.setCurrentItem(4);
                 }
-                getSupportFragmentManager().beginTransaction().replace(R.id.container, fragment).commit();
                 return true;
+            }
+        });
+
+        viewpager.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
+            @Override
+            public void onPageSelected(int position) {
+                super.onPageSelected(position);
+                switch (position){
+                    case 0:
+                        navigationView.getMenu().findItem(R.id.nav_home).setChecked(true);
+                        break;
+                    case 1:
+                        navigationView.getMenu().findItem(R.id.nav_activity).setChecked(true);
+                        break;
+                    case 2:
+                        navigationView.getMenu().findItem(R.id.nav_pay).setChecked(true);
+                        break;
+                    case 3:
+                        navigationView.getMenu().findItem(R.id.nav_chat).setChecked(true);
+                        break;
+                    case 4:
+                        navigationView.getMenu().findItem(R.id.nav_account).setChecked(true);
+                        break;
+
+                }
             }
         });
     }

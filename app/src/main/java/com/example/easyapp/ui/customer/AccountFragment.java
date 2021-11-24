@@ -16,8 +16,8 @@ import com.example.easyapp.ui.LoginActivity;
 
 public class AccountFragment extends Fragment {
 
-    private EditText profile_name, profile_email, profile_phone, profile_address;
-    private Button update, signout;
+//    private EditText profile_name, profile_email, profile_phone, profile_address;
+//    private Button update, signout;
 
 
 
