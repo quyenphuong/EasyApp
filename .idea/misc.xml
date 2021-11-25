@@ -51,13 +51,14 @@
         <entry key="..\:/EasyApp/app/src/main/res/layout/activity_home.xml" value="0.2" />
         <entry key="..\:/EasyApp/app/src/main/res/layout/activity_login.xml" value="0.264" />
         <entry key="..\:/EasyApp/app/src/main/res/layout/activity_main.xml" value="0.144" />
+        <entry key="..\:/EasyApp/app/src/main/res/layout/activity_move.xml" value="0.259375" />
         <entry key="..\:/EasyApp/app/src/main/res/layout/activity_shipping.xml" value="0.17028985507246377" />
         <entry key="..\:/EasyApp/app/src/main/res/layout/activity_sign_up.xml" value="0.264" />
         <entry key="..\:/EasyApp/app/src/main/res/layout/activity_splash.xml" value="0.1" />
         <entry key="..\:/EasyApp/app/src/main/res/layout/fragment_account.xml" value="0.259375" />
         <entry key="..\:/EasyApp/app/src/main/res/layout/fragment_activity.xml" value="0.259375" />
         <entry key="..\:/EasyApp/app/src/main/res/layout/fragment_chat.xml" value="0.259375" />
-        <entry key="..\:/EasyApp/app/src/main/res/layout/fragment_home.xml" value="0.16" />
+        <entry key="..\:/EasyApp/app/src/main/res/layout/fragment_home.xml" value="0.264" />
         <entry key="..\:/EasyApp/app/src/main/res/layout/fragment_pay.xml" value="0.259375" />
         <entry key="..\:/EasyApp/app/src/main/res/layout/home_horizontal_item.xml" value="0.16983695652173914" />
         <entry key="..\:/EasyApp/app/src/main/res/layout/home_vertical_item.xml" value="0.259375" />

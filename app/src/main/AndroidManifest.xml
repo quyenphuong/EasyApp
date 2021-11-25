@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
         <activity
+            android:name=".feature.ClubActivity"
+            android:exported="true" />
+        <activity
+            android:name=".feature.GiftActivity"
+            android:exported="true" />
+        <activity
+            android:name=".feature.VoucherActivity"
+            android:exported="true" />
+        <activity
+            android:name=".feature.MoveActivity"
+            android:exported="true" />
+        <activity
             android:name=".ui.ForgotActivity"
             android:exported="true" />
         <activity
