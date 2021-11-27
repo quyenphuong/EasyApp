@@ -49,6 +49,7 @@
         <entry key="..\:/EasyApp/app/src/main/res/drawable/search_bg.xml" value="0.1484375" />
         <entry key="..\:/EasyApp/app/src/main/res/drawable/splashbg.xml" value="0.1" />
         <entry key="..\:/EasyApp/app/src/main/res/layout/activity_bill.xml" value="0.2453125" />
+        <entry key="..\:/EasyApp/app/src/main/res/layout/activity_club.xml" value="0.259375" />
         <entry key="..\:/EasyApp/app/src/main/res/layout/activity_customer_maps.xml" value="0.259375" />
         <entry key="..\:/EasyApp/app/src/main/res/layout/activity_forgot.xml" value="0.259375" />
         <entry key="..\:/EasyApp/app/src/main/res/layout/activity_forgot2.xml" value="0.2713541666666667" />
@@ -71,6 +72,7 @@
         <entry key="..\:/EasyApp/app/src/main/res/layout/home_horizontal_item.xml" value="0.16983695652173914" />
         <entry key="..\:/EasyApp/app/src/main/res/layout/home_vertical_item.xml" value="0.259375" />
         <entry key="..\:/EasyApp/app/src/main/res/layout/layout_diaglog_cod.xml" value="0.259375" />
+        <entry key="..\:/EasyApp/app/src/main/res/layout/layout_dialog_time.xml" value="0.1" />
         <entry key="..\:/EasyApp/app/src/main/res/layout/list_item_type.xml" value="0.1" />
         <entry key="..\:/EasyApp/app/src/main/res/layout/order_details.xml" value="0.259375" />
         <entry key="..\:/EasyApp/app/src/main/res/layout/price_temp.xml" value="0.264" />

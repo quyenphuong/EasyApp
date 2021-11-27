@@ -6,6 +6,7 @@
     android:background="@color/white">
 
     <TextView
+        android:id="@+id/call_price"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Giá ước tính"
@@ -44,7 +45,7 @@
             />
 
         <LinearLayout
-            android:id="@+id/call_dialog_price"
+            android:id="@+id/call_next_dialog_price"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -79,17 +80,18 @@
             android:textSize="20dp"/>
 
         <TextView
-            android:id="@+id/cod_money_dialog"
+            android:id="@+id/call_next_cod_dialog"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Thu tiền hộ (COD)"
-
             android:layout_margin="10dp"
-            android:textColor="@color/Black"
-            android:drawableRight="@drawable/ic_baseline_add_circle_24"/>
+
+            android:drawableRight="@drawable/ic_baseline_add_circle_24"
+            android:text="Thu tiền hộ (COD)"
+            android:textColor="@color/Black" />
     </LinearLayout>
 
     <RelativeLayout
+        android:id="@+id/together_money"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp">
@@ -107,10 +109,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
             android:text="100.000"
-            android:textSize="18dp"
-            android:layout_margin="10dp"
-            android:textColor="@color/Black" />
+            android:textColor="@color/Black"
+            android:textSize="18dp" />
 
     </RelativeLayout>
 

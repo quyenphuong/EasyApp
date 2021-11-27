@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".feature.ShippingActivity"
+    android:background="@color/white"
     android:orientation="vertical">
 
     <LinearLayout
@@ -12,6 +13,7 @@
         android:layout_height="wrap_content">
 
         <Button
+            android:id="@+id/call_ship"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:background="@drawable/ic_baseline_back"
@@ -35,6 +37,7 @@
             android:layout_height="wrap_content"
             android:text="Giao hàng\nxin chào!"
             android:textSize="30dp"
+            android:textColor="@color/Black"
             android:layout_margin="20dp"
             />
 
@@ -58,7 +61,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint=" Địa chỉ của bạn"
+            android:textColorHint="@color/SlateGray"
             android:layout_margin="10dp"
+            android:textColor="@color/Black"
             android:drawableLeft="@drawable/ic_baseline_place_24"
             />
         <EditText
@@ -67,6 +72,8 @@
             android:layout_height="wrap_content"
             android:hint=" Giao tới..."
             android:layout_margin="10dp"
+            android:textColor="@color/Black"
+            android:textColorHint="@color/SlateGray"
             android:drawableLeft="@drawable/ic_baseline_place_24"
             />
 
@@ -76,8 +83,9 @@
         android:id="@+id/price_temp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:text="Xem giá ước tính"/>
+        android:layout_margin="30dp"
+        android:text="Xem giá ước tính"
+        android:background="@drawable/btn"/>
 
 
 </LinearLayout>
