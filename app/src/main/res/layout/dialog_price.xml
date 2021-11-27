@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Giờ lấy hàng"
+            android:textColor="@color/SlateGray"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/ic_baseline_back"
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:layout_margin="10dp"
+            android:text="Chọn thời gian mà bạn muốn !"
+            android:textColor="@color/Black"
+
+            />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/pick_up_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:background="#EC6615">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hôm nay"
+            android:textColor="@color/Black"
+            android:layout_margin="10dp"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:id="@+id/pick_up_time_now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="08:00-08:30"
+            android:textColor="@color/Black" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/pick_up_time_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:background="#EC6615"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ngày mai"
+            android:textColor="@color/Black"
+            android:layout_margin="10dp"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:id="@+id/pick_up_time_tomorrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="08:00-08:30"
+            android:textColor="@color/Black"
+            android:layout_margin="10dp"
+            android:layout_alignParentRight="true"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp">
+
+        <Button
+            android:id="@+id/pickup"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Lấy hàng ngay"
+            android:background="@drawable/btn"
+            />
+
+        <Button
+            android:id="@+id/book"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Đặt lịch"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn"
+            />
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Giá ước tính"
+        android:textColor="@color/SlateGray"
+        android:textSize="20dp"
+        android:layout_margin="20dp"
+        android:drawableLeft="@drawable/ic_baseline_back"
+
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20dp">
+
+
+        <EditText
+            android:id="@+id/address_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=" Địa chỉ của bạn"
+            android:textColorHint="@color/SlateGray"
+            android:layout_margin="10dp"
+            android:drawableLeft="@drawable/ic_baseline_place_24"
+            />
+        <EditText
+            android:id="@+id/address_ship"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=" Giao tới..."
+            android:textColorHint="@color/SlateGray"
+            android:layout_margin="10dp"
+            android:drawableLeft="@drawable/ic_baseline_place_24"
+            />
+
+        <LinearLayout
+            android:id="@+id/call_dialog_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+          >
+
+            <TextView
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:text="Giao ngay hôm nay, 30 phút hoặc ít hơn\nGiao nhanh 30 phút 5km"
+                android:textSize="15dp"
+                android:layout_margin="10dp"
+                android:textColor="@color/SlateGray"
+                android:drawableLeft="@drawable/ic_baseline_run_circle_24"/>/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/ic_baseline_next"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dịch vụ thêm"
+
+            android:textColor="@color/Black"
+            android:layout_margin="10dp"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/cod_money_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thu tiền hộ (COD)"
+
+            android:layout_margin="10dp"
+            android:textColor="@color/Black"
+            android:drawableRight="@drawable/ic_baseline_add_circle_24"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tổng cộng"
+            android:layout_margin="10dp"
+            android:textColor="@color/Black" />
+
+        <TextView
+            android:id="@+id/money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="100.000"
+            android:layout_margin="10dp"
+            android:textColor="@color/Black" />
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/bill_detail_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thêm thông tin đơn hàng"
+        android:layout_margin="40dp"
+        android:background="@drawable/btn"/>
+
+
+</LinearLayout>

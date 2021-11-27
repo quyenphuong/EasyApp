@@ -15,7 +15,7 @@
         android:layout_width="wrap_content"
         android:layout_height="150dp"
         android:id="@+id/logoimgUp"
-        android:src="@drawable/easypng" />
+        android:src="@drawable/easynew" />
 
     <RadioGroup
         android:id="@+id/radioGroup"

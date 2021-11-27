@@ -48,7 +48,6 @@
             android:textColorHint="@color/white"
             android:transitionName="username_tran"
             app:endIconMode="custom"
-            app:startIconContentDescription=""
             app:startIconDrawable="@drawable/ic_baseline_person_24"
             >
 

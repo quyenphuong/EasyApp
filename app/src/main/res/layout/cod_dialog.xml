@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đơn hàng COD"
+            android:textColor="@color/Black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tài xế sẽ trả tiền hàng trước và thu lại số tiền\nđó từ người nhận"
+            android:textColor="@color/SlateGray"
+           />
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Số tiền"
+        android:textColor="@color/Black"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        android:textSize="20dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Tối đa 2.000.000đ"
+        android:textColorHint="@color/SlateGray"
+        android:layout_margin="10dp"
+        android:background="@drawable/btn_white"
+        android:elevation="20dp"
+        android:inputType="textVisiblePassword"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thêm"
+        android:layout_margin="20dp"
+        android:background="@drawable/btn"
+        android:layout_gravity="center"/>
+
+
+
+
+</LinearLayout>
