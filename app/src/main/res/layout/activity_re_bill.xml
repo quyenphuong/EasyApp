@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/call_re_bill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Xem lại đơn hàng"
+        android:textColor="@color/SlateGray"
+        android:textSize="20dp"
+        android:drawableLeft="@drawable/ic_baseline_back"
+
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollView="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chi tiết đơn hàng"
+                android:textColor="@color/Black"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Người gửi"
+                    android:textColor="@color/Black"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/ic_baseline_person_pin_circle_24"/>
+
+                <EditText
+                    android:id="@+id/name_re_bill_customer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Tên người gửi"
+                    android:textColorHint="@color/SlateGray"
+                    android:layout_margin="5dp"
+                    android:inputType="textVisiblePassword"
+                    />
+
+                <EditText
+                    android:id="@+id/add_re_bill_customer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Địa chỉ người gửi"
+                    android:textColorHint="@color/SlateGray"
+                    android:layout_margin="5dp"
+
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Người nhận"
+                    android:textStyle="bold"
+                    android:textColor="@color/Black"
+                    android:textSize="20dp"
+                    android:drawableLeft="@drawable/ic_baseline_person_pin_circle_24"/>/>
+
+                <EditText
+                    android:id="@+id/name_re_bill_ship"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Tên người nhận"
+                    android:textColorHint="@color/SlateGray"
+                    android:layout_margin="5dp"
+                    android:inputType="textVisiblePassword"
+                    />
+
+                <EditText
+                    android:id="@+id/add_re_bill_ship"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Địa chỉ người nhận"
+                    android:textColorHint="@color/SlateGray"
+                    android:layout_margin="5dp"
+
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Ghi chú cho tài xế"
+                    android:layout_margin="5dp"
+                    android:textColorHint="@color/SlateGray"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tổng trọng lượng"
+                    android:textColor="@color/SlateGray"
+                    android:textSize="18dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+
+                    />
+                <Spinner
+                    android:id="@+id/spinner_kg2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:drawable/btn_dropdown"
+                    android:spinnerMode="dropdown"
+                    android:layout_margin="10dp"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Dịch vụ thêm"
+                        android:textColor="@color/Black"
+                        android:layout_margin="10dp"
+                        android:textSize="20dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/cod_money_dialog"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Thu tiền hộ (COD)"
+                        android:layout_margin="10dp"
+                        android:textColor="@color/SlateGray"
+                        android:textSize="18dp"
+                        android:drawableRight="@drawable/ic_baseline_add_circle_24"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Chi tiết thanh toán"
+                        android:textColor="@color/Black"
+                        android:layout_margin="10dp"
+                        android:textStyle="bold"
+                        android:textSize="20dp"/>
+                    <TextView
+                        android:id="@+id/tv_name_ctm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Người gửi"
+                        android:textSize="18dp"
+                        android:layout_margin="10dp"
+                        android:textColor="@color/SlateGray"
+                        android:drawableRight="@drawable/ic_baseline_next"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tổng cộng"
+            android:layout_margin="10dp"
+            android:textSize="18dp"
+            android:textColor="@color/Black" />
+
+        <TextView
+            android:id="@+id/re_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="100.000"
+            android:textSize="18dp"
+            android:layout_margin="10dp"
+            android:textColor="@color/Black" />
+
+    </RelativeLayout>
+    <Button
+        android:id="@+id/re_bill_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đặt đơn hàng"
+        android:background="@drawable/btn"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"/>
+
+
+
+
+</LinearLayout>

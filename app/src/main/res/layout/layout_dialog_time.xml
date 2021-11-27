@@ -12,6 +12,7 @@
         android:orientation="vertical"
         android:layout_margin="20dp">
         <TextView
+            android:id="@+id/call_time"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Giờ lấy hàng"
@@ -101,18 +102,16 @@
             android:id="@+id/pickup"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:text="Lấy hàng ngay"
             android:background="@drawable/btn"
-            />
+            android:text="Lấy hàng ngay" />
 
         <Button
             android:id="@+id/book"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:text="Đặt lịch"
             android:layout_alignParentRight="true"
             android:background="@drawable/btn"
-            />
+            android:text="Đặt lịch" />
 
     </RelativeLayout>
 </LinearLayout>
