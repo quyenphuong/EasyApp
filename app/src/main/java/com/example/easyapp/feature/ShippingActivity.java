@@ -1,5 +1,7 @@
 package com.example.easyapp.feature;
 
+import static android.app.PendingIntent.getActivity;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Dialog;
@@ -18,6 +20,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.example.easyapp.R;
+import com.example.easyapp.api.CustomerMapActivity;
 import com.example.easyapp.ui.ForgotActivity;
 import com.example.easyapp.ui.HomeActivity;
 import com.example.easyapp.ui.LoginActivity;
@@ -96,10 +99,17 @@ public class ShippingActivity extends AppCompatActivity {
 
 
         /////////
+        addressHome.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                }
+        });
+        ////////
         callPrice.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
-              dialog.dismiss();
+                dialog.dismiss();
             }
         });
 

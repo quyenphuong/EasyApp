@@ -50,6 +50,7 @@
         <entry key="..\:/EasyApp/app/src/main/res/drawable/splashbg.xml" value="0.1" />
         <entry key="..\:/EasyApp/app/src/main/res/layout/activity_bill.xml" value="0.2453125" />
         <entry key="..\:/EasyApp/app/src/main/res/layout/activity_club.xml" value="0.259375" />
+        <entry key="..\:/EasyApp/app/src/main/res/layout/activity_customer_map.xml" value="0.1279128672745694" />
         <entry key="..\:/EasyApp/app/src/main/res/layout/activity_customer_maps.xml" value="0.259375" />
         <entry key="..\:/EasyApp/app/src/main/res/layout/activity_forgot.xml" value="0.259375" />
         <entry key="..\:/EasyApp/app/src/main/res/layout/activity_forgot2.xml" value="0.2713541666666667" />
@@ -118,9 +119,6 @@
         <entry key="..\:/Users/vgtma/AndroidStudioProjects/EasyApp/app/src/main/res/menu/menu_navi.xml" value="0.36666666666666664" />
       </map>
     </option>
-  </component>
-  <component name="ProjectPlainTextFileTypeManager">
-    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/layout_diaglog_cod.xml" />
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_X" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
