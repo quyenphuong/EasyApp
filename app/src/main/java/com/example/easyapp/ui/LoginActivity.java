@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.util.Pair;
 import android.util.Patterns;
 import android.view.View;
@@ -15,18 +16,23 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.easyapp.R;
-import com.example.easyapp.ui.HomeActivity;
-import com.example.easyapp.ui.SignUpActivity;
+import com.example.easyapp.model.UserModel;
+import com.example.easyapp.ui.driver.DriverActivity;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 
 public class LoginActivity extends AppCompatActivity {
 
+    private FirebaseDatabase database;
+    private DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference();
     private FirebaseAuth mAuth;
     private ImageView image;
     private TextView callSignUp, forgetSign;
@@ -121,7 +127,7 @@ public class LoginActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
                             // Sign in success, update UI with the signed-in user's information
-                            startActivity(new Intent(LoginActivity.this, HomeActivity.class));
+                            getRole();
                             FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
                             if(user.isEmailVerified()){
                                 Toast.makeText(LoginActivity.this,"Đăng nhập thành công",Toast.LENGTH_LONG).show();
@@ -133,5 +139,32 @@ public class LoginActivity extends AppCompatActivity {
                         }
                     }
                 });
+    }
+
+
+    private void getRole() {
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        if (user != null) {
+            String uid = user.getUid();
+
+            mDatabase.child("User").child(uid).get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
+                @Override
+                public void onComplete(@NonNull Task<DataSnapshot> task) {
+                    if (task.isSuccessful()) {
+                        UserModel um = task.getResult().getValue(UserModel.class);
+                        if(um.getRole().compareTo("Khách hàng")==0){
+                            Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
+                            startActivity(intent);
+                        }else {
+                            Intent intent = new Intent(LoginActivity.this, DriverActivity.class);
+                            startActivity(intent);
+                        }
+                    }
+                    else {
+                        Log.e("firebase", "Lấy dữ liệu thất bại", task.getException());
+                    }
+                }
+            });
+        }
     }
 }

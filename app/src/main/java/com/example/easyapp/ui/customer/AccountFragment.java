@@ -18,7 +18,6 @@ import com.example.easyapp.model.UserModel;
 import com.example.easyapp.ui.ForgotActivity;
 import com.example.easyapp.ui.HomeActivity;
 import com.example.easyapp.ui.LoginActivity;
-import com.example.easyapp.ui.MainActivity;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
@@ -31,7 +30,7 @@ import com.google.firebase.database.FirebaseDatabase;
 public class AccountFragment extends Fragment {
     private View v;
     private EditText profile_name, profile_email, profile_phone, profile_address;
-    private Button update, signout, callBackHome;
+    private Button update, signout;
 
     private FirebaseDatabase database;
     private DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference();
@@ -75,17 +74,10 @@ public class AccountFragment extends Fragment {
                 startActivity(intent);
             }
         });
-        callBackHome.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v) {
-                Intent intent= new Intent(getActivity().getApplicationContext(), HomeActivity.class);
-                startActivity(intent);
-            }
-        });
 
         return v;
     }
     private void initUI(){
-        callBackHome = v.findViewById(R.id.call_back_home);
         profile_name = v.findViewById(R.id.profile_Name);
         profile_email = v.findViewById(R.id.profile_Email);
         profile_phone = v.findViewById(R.id.profile_Phone);
@@ -103,13 +95,14 @@ public class AccountFragment extends Fragment {
                 @Override
                 public void onComplete(@NonNull Task<DataSnapshot> task) {
                     if (!task.isSuccessful()) {
-                        Log.e("firebase", "Error getting data", task.getException());
+                        Log.e("firebase", "Lấy dữ liệu thất bại", task.getException());
                     }
                     else {
                         UserModel um = task.getResult().getValue(UserModel.class);
                         profile_name.setText(um.getName());
                         profile_email.setText(um.getEmail());
                         profile_phone.setText(um.getPhone());
+                        profile_address.setText(um.getAddress());
                     }
                 }
             });
@@ -131,6 +124,7 @@ public class AccountFragment extends Fragment {
             mDatabase.child("User").child(uid).child("email").setValue(email);
             mDatabase.child("User").child(uid).child("phone").setValue(phone);
             mDatabase.child("User").child(uid).child("address").setValue(address);
+
 
             Intent intent= new Intent(getActivity().getApplicationContext(), HomeActivity.class);
             startActivity(intent);

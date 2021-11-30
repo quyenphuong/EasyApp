@@ -24,6 +24,7 @@
             android:drawableRight="@drawable/ic_baseline_search_24"
             android:drawablePadding="9dp"
             android:padding="10dp"
+            android:textColor="@color/Black"
             android:background="@drawable/btn_white"
             android:textColorHint="#EC6615"
             android:fontFamily="sans-serif-light"
@@ -114,6 +115,7 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif-medium"
                             android:text="Gửi hàng"
+                            android:textColor="@color/Black"
                             android:textAlignment="center"
                             android:layout_gravity="center"
                             />
@@ -147,6 +149,7 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif-medium"
                             android:text="Di Chuyển"
+                            android:textColor="@color/Black"
                             android:textAlignment="center"
                             android:layout_gravity="center"
                             />
@@ -180,6 +183,7 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif-medium"
                             android:text="Ưu đãi"
+                            android:textColor="@color/Black"
                             android:textAlignment="center"
                             android:layout_gravity="center"
                             />
@@ -213,6 +217,7 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif-medium"
                             android:text="Quà tặng"
+                            android:textColor="@color/Black"
                             android:textAlignment="center"
                             android:layout_gravity="center"
                             />
@@ -246,6 +251,7 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif-medium"
                             android:text="Easy Club"
+                            android:textColor="@color/Black"
                             android:textAlignment="center"
                             android:layout_gravity="center"
                             />

@@ -26,19 +26,21 @@
 
 
         <EditText
-            android:id="@+id/address_home"
+            android:id="@+id/address_home_price"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint=" Địa chỉ của bạn"
             android:textColorHint="@color/SlateGray"
             android:layout_margin="10dp"
+            android:textColor="@color/Black"
             android:drawableLeft="@drawable/ic_baseline_place_24"
             />
         <EditText
-            android:id="@+id/address_ship"
+            android:id="@+id/address_ship_price"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint=" Giao tới..."
+            android:textColor="@color/Black"
             android:textColorHint="@color/SlateGray"
             android:layout_margin="10dp"
             android:drawableLeft="@drawable/ic_baseline_place_24"
@@ -99,10 +101,13 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
             android:text="Tổng cộng"
-            android:layout_margin="10dp"
-            android:textSize="18dp"
-            android:textColor="@color/Black" />
+            android:textColor="@color/Black"
+            android:textSize="18dp" />
 
         <TextView
             android:id="@+id/money"

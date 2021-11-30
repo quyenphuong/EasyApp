@@ -26,7 +26,7 @@ public class HomeActivity extends AppCompatActivity {
 
         //ẩn statusbar
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
-
+        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN);
         navigationView = findViewById(R.id.bottom_navigation);
 //        getSupportFragmentManager().beginTransaction().replace(R.id.body_container, new HomeFragment()).commit();
         navigationView.setSelectedItemId(R.id.nav_home);

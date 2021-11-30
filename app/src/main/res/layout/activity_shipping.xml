@@ -80,7 +80,7 @@
 
     </LinearLayout>
     <Button
-        android:id="@+id/price_temp"
+        android:id="@+id/price_temp_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="30dp"
