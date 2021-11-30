@@ -5,11 +5,17 @@
     android:id="@+id/profile"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@drawable/splashbg"
     android:orientation="vertical"
     tools:context=".ui.customer.AccountFragment"
     >
 
+    <Button
+        android:id="@+id/call_back_home"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/ic_back_white"
+        android:layout_margin="10dp"/>
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/avatar"
@@ -35,6 +41,7 @@
         android:hint="Tên người dùng"
         android:padding="13dp"
         android:textColorHint="@color/white"
+        android:textColor="@color/white"
         app:layout_constraintTop_toBottomOf="@+id/avatar"
         tools:layout_editor_absoluteX="24dp" />
 
@@ -52,6 +59,7 @@
         android:inputType="textEmailAddress"
         android:padding="13dp"
         android:textColorHint="@color/white"
+        android:textColor="@color/white"
         app:layout_constraintTop_toBottomOf="@+id/profile_Name"
         tools:layout_editor_absoluteX="20dp" />
 
@@ -68,6 +76,7 @@
         android:hint="Số điện thoại"
         android:padding="13dp"
         android:textColorHint="@color/white"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/profile_Email" />
@@ -79,13 +88,13 @@
         android:layout_marginTop="20dp"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
-
         android:background="@drawable/btn"
         android:drawableLeft="@drawable/ic_baseline_place_24"
         android:elevation="5dp"
         android:hint="Địa chỉ"
         android:padding="13dp"
         android:textColorHint="@color/white"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/profile_Phone" />

@@ -60,7 +60,7 @@ public class LoginActivity extends AppCompatActivity {
 
         goHome.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-               DangNhap();
+                DangNhap();
 
             }
         });
@@ -125,10 +125,6 @@ public class LoginActivity extends AppCompatActivity {
                             FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
                             if(user.isEmailVerified()){
                                 Toast.makeText(LoginActivity.this,"Đăng nhập thành công",Toast.LENGTH_LONG).show();
-
-                            }else{
-                                user.sendEmailVerification();
-                                Toast.makeText(LoginActivity.this,"Vui lòng kiểm tra email",Toast.LENGTH_LONG).show();
 
                             }
                         } else {

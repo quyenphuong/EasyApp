@@ -16,33 +16,22 @@
         android:id="@+id/logoimgUp"
         android:src="@drawable/easynew" />
 
-    <RadioGroup
-        android:id="@+id/radioGroup"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logoimgUp">
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="150sp"
+        android:layout_height="50sp"
+        android:outlineSpotShadowColor="@color/Black"
+        tools:ignore="SpeakableTextPresentCheck" />
 
-        <RadioButton
-            android:id="@+id/radioButton_driver"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Tài xế" />
 
-        <RadioButton
-            android:id="@+id/radioButton_customer"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Khách hàng" />
-    </RadioGroup>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp">
+
+
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/name"
@@ -154,6 +143,8 @@
         </com.google.android.material.textfield.TextInputLayout>
     </LinearLayout>
 
+    <!--    android:onClick="registerUser"-->
+
     <Button
         android:id="@+id/sign_next_btn"
         android:layout_width="match_parent"
@@ -163,7 +154,6 @@
         android:text="Đăng ký"
         android:textColor="@color/white"
         android:transitionName="button_tran" />
-    <!--    android:onClick="registerUser"-->
 
     <Button
         android:id="@+id/btnLogin"
@@ -177,4 +167,3 @@
 
 
 </LinearLayout>
-
