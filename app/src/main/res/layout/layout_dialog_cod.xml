@@ -46,7 +46,7 @@
         android:elevation="20dp"
         android:inputType="textVisiblePassword"/>
     <Button
-        android:id="@+id/add_cod"
+        android:id="@+id/add_cod_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Thêm"
