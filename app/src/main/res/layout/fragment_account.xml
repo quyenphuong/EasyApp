@@ -10,16 +10,7 @@
     tools:context=".ui.customer.AccountFragment"
     >
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Giờ lấy hàng"
-        android:textColor="@color/SlateGray"
-        android:textSize="20dp"
-        android:layout_marginTop="10dp"
-        android:drawableLeft="@drawable/ic_baseline_back"
 
-        />
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/avatar"
         android:layout_width="match_parent"
@@ -35,8 +26,9 @@
         android:id="@+id/profile_Name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
-        android:layout_margin="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
         android:background="@drawable/btn"
         android:drawableLeft="@drawable/ic_baseline_person_24"
         android:elevation="5dp"
@@ -50,8 +42,9 @@
         android:id="@+id/profile_Email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="30dp"
-        android:layout_marginTop="71dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
         android:background="@drawable/btn"
         android:drawableLeft="@drawable/ic_baseline_email_24"
         android:elevation="5dp"
@@ -66,8 +59,9 @@
         android:id="@+id/profile_Phone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="30dp"
-
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
         android:background="@drawable/btn"
         android:drawableLeft="@drawable/ic_baseline_phone_android_24"
         android:elevation="5dp"
@@ -82,7 +76,9 @@
         android:id="@+id/profile_Address"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
 
         android:background="@drawable/btn"
         android:drawableLeft="@drawable/ic_baseline_place_24"
@@ -94,38 +90,39 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/profile_Phone" />
 
-    <Button
-        android:id="@+id/Update"
-        android:layout_width="142dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="30dp"
-        android:layout_marginTop="52dp"
-        android:background="@drawable/btn"
-        android:padding="13dp"
-        android:text="Cập nhật"
-        android:textAllCaps="false"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/profile_Address" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <Button
-        android:id="@+id/Signout"
-        android:layout_width="142dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="30dp"
-        android:layout_marginTop="52dp"
-        android:background="@drawable/btn"
-        android:padding="13dp"
-        android:text="Đăng xuất"
-        android:textAllCaps="false"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Update" />
+        <Button
+            android:id="@+id/Update"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/btn"
+            android:padding="13dp"
+            android:text="Cập nhật"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/Signout"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:background="@drawable/btn"
+            android:padding="13dp"
+            android:text="Đăng xuất"
+            android:layout_alignParentRight="true"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+    </RelativeLayout>
+
 
 </LinearLayout>
