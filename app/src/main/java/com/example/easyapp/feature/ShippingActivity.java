@@ -147,65 +147,53 @@ public class ShippingActivity extends AppCompatActivity {
 
 
 
-        TextView callPrice, callNextCodDialog, moneyTogether, callBackTime;
+        TextView callPrice, callNextCodDialog, totalMoney, callBackTime;
         EditText addressShipPrice, addressHomePrice, moneyInput;
         LinearLayout calltime;
         Button billDetailButton, pickUpButton, bookButton, buttonAddMoney;
 
         /////////////////////////////
-        callBackTime = dialog.findViewById(R.id.call_back_time);
+        callBackTime = dialog1.findViewById(R.id.call_back_time);
         callPrice = dialog.findViewById(R.id.call_price);
         callNextCodDialog = dialog.findViewById(R.id.call_next_cod_dialog);
         addressShipPrice = dialog.findViewById(R.id.address_ship_price);
         addressHomePrice = dialog.findViewById(R.id.address_home_price);
         calltime = dialog.findViewById(R.id.call_next_dialog_price);
-        moneyTogether = dialog.findViewById(R.id.money);
+        totalMoney = dialog.findViewById(R.id.money);
         billDetailButton = dialog.findViewById(R.id.bill_detail_button);
-        pickUpButton = dialog.findViewById(R.id.pickup);
-        bookButton = dialog.findViewById(R.id.book);
-        buttonAddMoney = dialog.findViewById(R.id.add_cod_button);
-        moneyInput = dialog.findViewById(R.id.money_input);
+        pickUpButton = dialog1.findViewById(R.id.pickup);
+        bookButton = dialog1.findViewById(R.id.book);
+        buttonAddMoney = dialog2.findViewById(R.id.add_cod_button);
+        moneyInput = dialog2.findViewById(R.id.money_input);
 
         String s1 = addressHome.getText().toString();
         String s2 = addressShip.getText().toString();
         addressHomePrice.setText(s1);
         addressShipPrice.setText(s2);
         ////
-//        buttonAddMoney.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                dialog.dismiss();
-//                dialog.setContentView(R.layout.activity_re_bill);
-//            }
-//        });
-        //////lấy số tiền cod add lên
 
-
-        /////////
-
-
-        //////////
-        //////////// lấy địa chỉ người gửi
-
-//        addressHomePrice.setOnClickListener(new View.OnClickListener() {
-//                @Override
-//                public void onClick(View v) {
-//
-//                }
-//        });
-//
-//
         //////// call back
         calltime.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
-                dialog.setContentView(R.layout.layout_dialog_time);
+//                dialog1.setContentView(R.layout.layout_dialog_time);
+                dialog1.show();
             }
         });
         //////// gọi vào COD
         callNextCodDialog.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                dialog.setContentView(R.layout.layout_dialog_cod);
+
+//                dialog.setContentView(R.layout.layout_dialog_cod);
+                dialog2.show();
+            }
+        });
+        ///////////
+        buttonAddMoney.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                dialog2.dismiss();
             }
         });
         //////// gọi qua chi tiết Bill. Activity khác
@@ -231,23 +219,24 @@ public class ShippingActivity extends AppCompatActivity {
 //                dialog.setContentView(R.layout.price_temp);
 //            }
 //        });
-        //// nhán vô lấy hàng ngay quay lại
-//        pickUpButton.setOnClickListener(new View.OnClickListener() {
-//            public void onClick(View v) {
-//                dialog1.setContentView(R.layout.price_temp);
-//                dialog1.cancel();
-//            }
-//        });
+        // nhán vô lấy hàng ngay quay lại
+        pickUpButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                dialog1.dismiss();
+//                dialog.show();
+
+            }
+        });
 
 
         //////////////
         /////////////
         ////////////
         /////////////
-
+//
 //        callNextCodDialog.setOnClickListener(new View.OnClickListener() {
 //            public void onClick(View v) {
-//                dialog.setContentView(R.layout.price_temp);
+//                dialog2.;
 //
 //            }
 //        });

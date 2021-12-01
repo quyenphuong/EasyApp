@@ -5,7 +5,7 @@ public class ShippingModel {
     private String nameship;
     private String addressship;
     private String noteship;
-    private String totolship;
+    private String totalship;
     private String typeship;
     private String cod;
 
@@ -17,7 +17,7 @@ public class ShippingModel {
         this.nameship = nameship;
         this.addressship = addressship;
         this.noteship = noteship;
-        this.totolship = totolship;
+        this.totalship = totolship;
         this.typeship = typeship;
         this.cod = cod;
     }
@@ -47,11 +47,11 @@ public class ShippingModel {
     }
 
     public String getTotolship() {
-        return totolship;
+        return totalship;
     }
 
     public void setTotolship(String totolship) {
-        this.totolship = totolship;
+        this.totalship = totolship;
     }
 
     public String getTypeship() {

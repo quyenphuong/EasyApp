@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -12,6 +13,7 @@
         android:text="Xem lại đơn hàng"
         android:textColor="@color/SlateGray"
         android:textSize="20dp"
+        android:layout_margin="10dp"
         android:drawableLeft="@drawable/ic_baseline_back"
 
         />
@@ -48,26 +50,28 @@
                     android:textColor="@color/Black"
                     android:textSize="20dp"
                     android:textStyle="bold"
-                    android:drawableLeft="@drawable/ic_baseline_person_pin_circle_24"/>
+                    app:drawableLeftCompat="@drawable/ic_baseline_person_pin_circle_24" />
 
-                <EditText
+                <TextView
                     android:id="@+id/name_re_bill_customer"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Tên người gửi"
-                    android:textColorHint="@color/SlateGray"
+                    android:text="Tên người gửi"
+                    android:textSize="20sp"
+                    android:textColor="@color/SlateGray"
                     android:layout_margin="5dp"
-                    android:inputType="textVisiblePassword"
+                    app:drawableLeftCompat="@drawable/ic_baseline_person_24"
                     />
 
                 <EditText
                     android:id="@+id/add_re_bill_customer"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Địa chỉ người gửi"
-                    android:textColorHint="@color/SlateGray"
+                    android:text="Địa chỉ người gửi"
+                    android:textSize="20sp"
+                    android:textColor="@color/SlateGray"
                     android:layout_margin="5dp"
-
+                    app:drawableLeftCompat="@drawable/ic_baseline_place_24"
                     />
 
 
@@ -85,34 +89,54 @@
                     android:text="Người nhận"
                     android:textStyle="bold"
                     android:textColor="@color/Black"
-                    android:textSize="20dp"
-                    android:drawableLeft="@drawable/ic_baseline_person_pin_circle_24"/>/>
+                    android:textSize="20sp"
+                    app:drawableLeftCompat="@drawable/ic_baseline_person_pin_circle_24" />
 
-                <EditText
+                <TextView
                     android:id="@+id/name_re_bill_ship"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Tên người nhận"
-                    android:textColorHint="@color/SlateGray"
-                    android:layout_margin="5dp"
+                    android:text="Tên người nhận"
+                    android:textColor="@color/SlateGray"
+                    android:textSize="20sp"
+                    android:layout_margin="10dp"
                     android:inputType="textVisiblePassword"
+                    app:drawableLeftCompat="@drawable/ic_baseline_person_24"
                     />
 
-                <EditText
+                <TextView
                     android:id="@+id/add_re_bill_ship"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Địa chỉ người nhận"
-                    android:textColorHint="@color/SlateGray"
-                    android:layout_margin="5dp"
-
+                    android:text="Địa chỉ người nhận"
+                    android:textColor="@color/SlateGray"
+                    android:layout_margin="10dp"
+                    android:textSize="20sp"
+                    app:drawableLeftCompat="@drawable/ic_baseline_place_24"
                     />
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Ghi chú cho tài xế"
-                    android:layout_margin="5dp"
-                    android:textColorHint="@color/SlateGray"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="Ghi chú cho tài xế"
+                        android:textColor="@color/SlateGray"
+                        android:textSize="20sp"
+                        app:drawableLeftCompat="@drawable/ic_baseline_library_books_24" />
+
+                    <TextView
+                        android:id="@+id/total_money_end"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="ship an toàn"
+                        android:textColor="@color/SlateGray"
+                        android:textSize="20sp" />
+
+
 
 
                 <TextView
@@ -120,18 +144,20 @@
                     android:layout_height="wrap_content"
                     android:text="Tổng trọng lượng"
                     android:textColor="@color/SlateGray"
-                    android:textSize="18dp"
+                    android:textSize="20sp"
                     android:layout_marginTop="5dp"
                     android:layout_marginLeft="10dp"
 
                     />
-                <Spinner
-                    android:id="@+id/spinner_kg2"
+                <TextView
+                    android:id="@+id/totol_kg"
+                    android:text="2kg"
+                    android:textSize="18sp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@android:drawable/btn_dropdown"
-                    android:spinnerMode="dropdown"
-                    android:layout_margin="10dp"/>
+                    android:textColor="@color/SlateGray"
+                    android:layout_marginLeft="20dp"
+                    />
 
 
                 <LinearLayout
@@ -144,7 +170,7 @@
                         android:text="Dịch vụ thêm"
                         android:textColor="@color/Black"
                         android:layout_margin="10dp"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold"/>
 
                     <TextView
@@ -154,7 +180,7 @@
                         android:text="Thu tiền hộ (COD)"
                         android:layout_margin="10dp"
                         android:textColor="@color/SlateGray"
-                        android:textSize="18dp"
+                        android:textSize="18sp"
                         android:drawableRight="@drawable/ic_baseline_add_circle_24"/>
 
                 </LinearLayout>
