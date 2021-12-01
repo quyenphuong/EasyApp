@@ -226,11 +226,11 @@ public class ShippingActivity extends AppCompatActivity {
             }
         });
         ///
-        callBackTime.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                dialog1.setContentView(R.layout.price_temp);
-            }
-        });
+//        callBackTime.setOnClickListener(new View.OnClickListener() {
+//            public void onClick(View v) {
+//                dialog.setContentView(R.layout.price_temp);
+//            }
+//        });
         //// nhán vô lấy hàng ngay quay lại
 //        pickUpButton.setOnClickListener(new View.OnClickListener() {
 //            public void onClick(View v) {

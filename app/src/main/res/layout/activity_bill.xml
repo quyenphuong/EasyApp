@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -11,13 +12,12 @@
         android:layout_height="wrap_content"
         android:text="Chi tiết đơn hàng"
         android:textColor="@color/SlateGray"
-        android:textSize="20dp"
-        android:drawableLeft="@drawable/ic_baseline_back"
-
-        />
+        android:textSize="20sp"
+        app:drawableLeftCompat="@drawable/ic_baseline_back" />
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+
         >
 
 
@@ -36,8 +36,9 @@
                     android:layout_height="wrap_content"
                     android:text="Người gửi"
                     android:textColor="@color/Black"
-                    android:textSize="20dp"
-                    android:drawableLeft="@drawable/ic_baseline_person_pin_circle_24"/>
+                    android:textSize="20sp"
+                    android:layout_marginLeft="5dp"
+                    app:drawableLeftCompat="@drawable/ic_baseline_person_pin_circle_24" />
 
                 <EditText
                     android:id="@+id/name_bill_customer"
@@ -48,7 +49,9 @@
                     android:textColorHint="@color/SlateGray"
                     android:layout_margin="5dp"
                     android:inputType="textVisiblePassword"
+                    android:drawableLeft="@drawable/ic_baseline_person_24"
                     />
+
                 <EditText
                     android:id="@+id/phone_bill_customer"
                     android:layout_width="match_parent"
@@ -57,16 +60,17 @@
                     android:textColor="@color/Black"
                     android:textColorHint="@color/SlateGray"
                     android:layout_margin="5dp"
-                    android:inputType="textVisiblePassword"
+                    android:drawableLeft="@drawable/ic_baseline_phone_android_24"
                     />
                 <EditText
-                    android:id="@+id/add_bill_customer"
+                    android:id="@+id/address_bill_customer"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Địa chỉ người gửi"
                     android:textColor="@color/Black"
                     android:textColorHint="@color/SlateGray"
                     android:layout_margin="5dp"
+                    android:drawableLeft="@drawable/ic_baseline_place_24"
 
                     />
 
@@ -85,8 +89,9 @@
                     android:text="Người nhận"
                     android:textStyle="bold"
                     android:textColor="@color/Black"
-                    android:textSize="20dp"
-                    android:drawableLeft="@drawable/ic_baseline_person_pin_circle_24"/>/>
+                    android:textSize="20sp"
+                    android:layout_marginLeft="5dp"
+                    app:drawableLeftCompat="@drawable/ic_baseline_person_pin_circle_24" />
 
                 <EditText
                     android:id="@+id/name_bill_ship"
@@ -97,6 +102,7 @@
                     android:textColorHint="@color/SlateGray"
                     android:layout_margin="5dp"
                     android:inputType="textVisiblePassword"
+                    android:drawableLeft="@drawable/ic_baseline_person_24"
                     />
                 <EditText
                     android:id="@+id/phone_bill_ship"
@@ -105,15 +111,19 @@
                     android:hint="Số điện thoại"
                     android:textColorHint="@color/SlateGray"
                     android:layout_margin="5dp"
+                    android:textColor="@color/Black"
                     android:inputType="textVisiblePassword"
+                    android:drawableLeft="@drawable/ic_baseline_phone_android_24"
                     />
                 <EditText
-                    android:id="@+id/add_bill_ship"
+                    android:id="@+id/address_bill_ship"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Địa chỉ người nhận"
+                    android:textColor="@color/Black"
                     android:textColorHint="@color/SlateGray"
                     android:layout_margin="5dp"
+                    android:drawableLeft="@drawable/ic_baseline_place_24"
 
                     />
                 <EditText
@@ -122,61 +132,76 @@
                     android:layout_height="wrap_content"
                     android:hint="Ghi chú cho tài xế"
                     android:layout_margin="5dp"
-                    android:textColorHint="@color/SlateGray"/>
+                    android:textColor="@color/Black"
+                    android:textColorHint="@color/SlateGray"
+                    android:drawableLeft="@drawable/ic_baseline_library_books_24"/>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Chọn loại hàng"
                     android:textColor="@color/SlateGray"
-                    android:textSize="18dp"
+                    android:textSize="18sp"
                     android:layout_marginTop="5dp"
                     android:layout_marginLeft="10dp"
 
                     />
                 <Spinner
                     android:id="@+id/spinner_type"
+                    android:outlineSpotShadowColor="@color/Brown"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@android:drawable/btn_dropdown"
                     android:spinnerMode="dropdown"
-                    android:layout_margin="10dp"/>
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Tổng trọng lượng"
                     android:textColor="@color/SlateGray"
-                    android:textSize="18dp"
+                    android:textSize="18sp"
                     android:layout_marginTop="5dp"
                     android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
 
                     />
                 <Spinner
                     android:id="@+id/spinner_kg"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:outlineSpotShadowColor="@color/Brown"
                     android:background="@android:drawable/btn_dropdown"
                     android:spinnerMode="dropdown"
-                    android:layout_margin="10dp"/>
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"/>
 
 
             </LinearLayout>
 
+
+            <Button
+                android:id="@+id/next_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tiếp theo"
+                android:background="@drawable/btn"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                />
 
         </LinearLayout>
 
     </ScrollView>
 
 
-    <Button
-        android:id="@+id/next_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Tiếp theo"
-        android:background="@drawable/btn"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-      />
+
 
 </LinearLayout>
